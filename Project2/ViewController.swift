@@ -1,10 +1,11 @@
 //
 //  ViewController.swift
-//  Project2
+//  Project2 + Project 6a
 //
 //  Created by James Slusser on 5/19/17.
 //  Copyright © 2017 James Slusser. All rights reserved.
 // https://www.hackingwithswift.com/read/2/overview
+// https://www.hackingwithswift.com/read/6/overview
 //
 
 import GameplayKit
@@ -17,7 +18,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
     
+    //@IBOutlet weak var display: UILabel!
+    // Tried to add display of score per Wrap Up, and I broke something
+    
     var countries = [String]()
+    
     var correctAnswer = 0
     var score = 0
     
@@ -55,9 +60,15 @@ class ViewController: UIViewController {
         if sender.tag == correctAnswer {
             title = "Correct"
             score += 1
+            //display.text = "Correct test"
+            // Tried to add display of score per Wrap Up, and I broke something
+
         } else {
             title = "Wrong"
             score -= 1
+            // display.text = "Score = \(score)"
+            // Tried to add display of score per Wrap Up, and I broke something
+
         }
         let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
