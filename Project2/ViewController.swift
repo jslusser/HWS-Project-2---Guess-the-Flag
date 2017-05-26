@@ -1,10 +1,11 @@
 //
 //  ViewController.swift
-//  Project2
+//  Project2 + Project 6a
 //
 //  Created by James Slusser on 5/19/17.
 //  Copyright © 2017 James Slusser. All rights reserved.
 // https://www.hackingwithswift.com/read/2/overview
+// https://www.hackingwithswift.com/read/6/overview
 //
 
 import GameplayKit
